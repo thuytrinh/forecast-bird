@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="thuytrinh.forecastbird.forecast.ForecastItemViewModel" />
+  </data>
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+      android:id="@+id/textView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@{viewModel.text}"
+      android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+      tools:text="Scattered Showers" />
+
+    <TextView
+      android:id="@+id/dateView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/textView"
+      android:text="@{viewModel.date}"
+      android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+      tools:text="Sunday, August 21, 2016" />
+
+    <TextView
+      android:id="@+id/highestTemperatureView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/dateView"
+      android:text="@{viewModel.highestTemperature}"
+      android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+      tools:text="26" />
+
+    <TextView
+      android:id="@+id/lowestTemperatureView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBaseline="@+id/highestTemperatureView"
+      android:layout_marginLeft="8dp"
+      android:layout_toRightOf="@+id/highestTemperatureView"
+      android:text="@{viewModel.lowestTemperature}"
+      android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+      tools:text="24" />
+  </RelativeLayout>
+</layout>

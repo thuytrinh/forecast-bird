@@ -1,0 +1,93 @@
+{
+  "query": {
+    "count": 1,
+    "created": "2016-08-18T17:15:48Z",
+    "lang": "en-US",
+    "results": {
+      "channel": {
+        "units": {
+          "distance": "mi",
+          "pressure": "in",
+          "speed": "mph",
+          "temperature": "F"
+        },
+        "title": "Yahoo! Weather - Amsterdam, NH, NL",
+        "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-727232/",
+        "description": "Yahoo! Weather for Amsterdam, NH, NL",
+        "language": "en-us",
+        "lastBuildDate": "Thu, 18 Aug 2016 07:15 PM CEST",
+        "ttl": "60",
+        "location": {
+          "city": "Amsterdam",
+          "country": "Netherlands",
+          "region": " NH"
+        },
+        "wind": {
+          "chill": "73",
+          "direction": "55",
+          "speed": "7"
+        },
+        "atmosphere": {
+          "humidity": "51",
+          "pressure": "1010.0",
+          "rising": "0",
+          "visibility": "16.1"
+        },
+        "astronomy": {
+          "sunrise": "6:31 am",
+          "sunset": "8:56 pm"
+        },
+        "image": {
+          "title": "Yahoo! Weather",
+          "width": "142",
+          "height": "18",
+          "link": "http://weather.yahoo.com",
+          "url": "http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
+        },
+        "item": {
+          "title": "Conditions for Amsterdam, NH, NL at 05:00 PM CEST",
+          "lat": "52.373119",
+          "long": "4.89319",
+          "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-727232/",
+          "pubDate": "Thu, 18 Aug 2016 05:00 PM CEST",
+          "condition": {
+            "code": "32",
+            "date": "Thu, 18 Aug 2016 05:00 PM CEST",
+            "temp": "74",
+            "text": "Sunny"
+          },
+          "forecast": [
+            {
+              "code": "32",
+              "date": "18 Aug 2016",
+              "day": "Thu",
+              "high": "74",
+              "low": "58",
+              "text": "Sunny"
+            },
+            {
+              "code": "11",
+              "date": "19 Aug 2016",
+              "day": "Fri",
+              "high": "75",
+              "low": "60",
+              "text": "Showers"
+            },
+            {
+              "code": "39",
+              "date": "20 Aug 2016",
+              "day": "Sat",
+              "high": "69",
+              "low": "61",
+              "text": "Scattered Showers"
+            }
+          ],
+          "description": "<![CDATA[<img src=\"http://l.yimg.com/a/i/us/we/52/32.gif\"/>\n<BR />\n<b>Current Conditions:</b>\n<BR />Sunny\n<BR />\n<BR />\n<b>Forecast:</b>\n<BR /> Thu - Sunny. High: 74Low: 58\n<BR /> Fri - Showers. High: 75Low: 60\n<BR /> Sat - Scattered Showers. High: 69Low: 61\n<BR /> Sun - Showers. High: 66Low: 60\n<BR /> Mon - Rain. High: 67Low: 60\n<BR />\n<BR />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-727232/\">Full Forecast at Yahoo! Weather</a>\n<BR />\n<BR />\n(provided by <a href=\"http://www.weather.com\" >The Weather Channel</a>)\n<BR />\n]]>",
+          "guid": {
+            "isPermaLink": "false"
+          }
+        }
+      }
+    }
+  }
+}

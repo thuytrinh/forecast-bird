@@ -1,0 +1,4 @@
+<resources>
+  <string name="app_name">ForecastBird</string>
+  <string name="no_forecast_available_yet">No forecast available yet</string>
+</resources>
