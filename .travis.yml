@@ -1,7 +1,7 @@
 language: android
 jdk:
   - oraclejdk8
-  - oraclejdk7
+
 android:
   components:
     # Use the latest revision of Android SDK Tools
