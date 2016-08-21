@@ -46,9 +46,13 @@ dependencies {
     exclude module: 'design'
   }
 
+  // A small library that makes it easy
+  // to define SQLite-based tables and columns.
+  // See more at https://github.com/skedgo/sqlite-utils.
   compile 'com.github.skedgo:sqlite-utils:v1.0'
   compile 'com.android.support:appcompat-v7:23.4.0'
   compile 'com.android.support:recyclerview-v7:23.4.0'
+  compile 'com.squareup.okhttp3:logging-interceptor:3.2.0'
   compile 'com.squareup.retrofit2:retrofit:2.0.2'
   compile 'com.squareup.retrofit2:converter-gson:2.0.2'
   compile 'com.squareup.retrofit2:adapter-rxjava:2.0.2'

@@ -10,19 +10,26 @@ import dagger.Module;
 import dagger.Provides;
 import okhttp3.Dispatcher;
 import okhttp3.OkHttpClient;
+import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 import rx.Scheduler;
+import thuytrinh.forecastbird.BuildConfig;
 
 @Module
 public class ApiModule {
   @Provides @Singleton OkHttpClient httpClient(ExecutorService executorService) {
-    return new OkHttpClient.Builder()
+    final OkHttpClient.Builder builder = new OkHttpClient.Builder()
         // Inject an appropriate ExecutorService for Android apps.
         // The default ExecutorService provided by OkHttp isn't optimal for Android apps.
-        .dispatcher(new Dispatcher(executorService))
-        .build();
+        .dispatcher(new Dispatcher(executorService));
+    if (BuildConfig.DEBUG) {
+      final HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor();
+      loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BASIC);
+      builder.addInterceptor(loggingInterceptor);
+    }
+    return builder.build();
   }
 
   @Provides @Singleton Gson gson() {
