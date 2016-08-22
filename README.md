@@ -2,6 +2,8 @@
 <a href="https://travis-ci.org/thuytrinh/forecast-bird"><img src='https://travis-ci.org/thuytrinh/forecast-bird.svg?branch=master'></a>
 
 A sample app that shows weather forecast for Amsterdam
+
+![fetching](screenshots/screenshot-fetching.png) ![done](screenshots/screenshot-data.png)
 ### Features
 The app covers all the original requirements with an addition that it has a capability to cache the previously fetched forecast. That means, when we first open it, it will fetch a list of forecast if there is Internet connection. But the next time we open in a scenario of no Internet connection, the app will show the forecast list that it fetched in the first place instead of just showing an empty page.
 ### Project structure
